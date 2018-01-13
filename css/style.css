@@ -1343,7 +1343,7 @@ ul.navbar-nav > li:hover > a{
 
 .countdown.bg-style div > span {
     font-size: 28px;
-    width: 65px;
+    width: 84px;
     height: 60px;
     line-height: 60px;
     border-radius: 3px;
@@ -2304,8 +2304,8 @@ h4.panel-title a.collapsed:before {
     display: block;
     width: 36px;
     height: 36px;
-    line-height: 34px;
-    font-size: 14px;
+    line-height: 36px;
+    font-size: 24px;
     position: relative;
 }
 
@@ -2313,6 +2313,7 @@ h4.panel-title a.collapsed:before {
     content: '';
     position: absolute;
     border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 50%;
     width: 100%;
     height: 100%;
     left: 0;
@@ -2340,31 +2341,6 @@ h4.panel-title a.collapsed:before {
 .footer-social ul li a i:hover {
     color: #fff;
 }
-.footer-social ul li a .fa-instagram {
-    color: #d32a1e;
-}
-.footer-social ul li a .fa-facebook {
-    color: #677fb5;
-}
-.footer-social ul li a .fa-twitter {
-    color: #70c2e9;
-}
-.footer-social ul li a .fa-google-plus {
-    color: #c53942;
-}
-.footer-social ul li a .fa-linkedin {
-    color: #3daccf;
-}
-
-.footer-social ul li a .fa-youtube {
-    color: #bb0000;
-}
-
-.footer-social ul li a .fa-instagram {
-    color: #125688;
-}
-
-
 
 /*-- Copyright --*/
 
