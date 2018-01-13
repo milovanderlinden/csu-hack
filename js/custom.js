@@ -36,7 +36,7 @@ jQuery(function($) {
 
 	if ( $( '.countdown' ).length > 0 ) {
 		$(".countdown").jCounter({
-		  	date: '18 March 2018 12:00:00',
+		  	date: '10 March 2018 09:00:00',
 		  	fallback: function() { console.log("count finished!") }
 		});
 	}
@@ -47,11 +47,10 @@ jQuery(function($) {
 
 	if ( $( '#map' ).length > 0 ) {
 		
-      var eventmap = {lat: 40.742964, lng: -73.992277};
-
+      var eventmap = {lat: 51.4416028, lng: 5.4673588};
       $('#map')
       .gmap3({
-         zoom: 13,
+         zoom: 18,
          center: eventmap,
          mapTypeId : google.maps.MapTypeId.ROADMAP,
          scrollwheel: false
