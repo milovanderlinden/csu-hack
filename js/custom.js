@@ -62,7 +62,7 @@ jQuery(function($) {
 
       .infowindow({
          position: eventmap,
-         content: "NYC Seminar and Conference Center, New York"
+         content: "Philips Stadion, Eindhoven"
       })
 
       .then(function (infowindow) {
