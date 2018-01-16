@@ -1409,10 +1409,6 @@ ul.navbar-nav > li:hover > a{
 /* Intro Area 
 ================================================== */
 
-.ts-intro{
-    padding-bottom: 80px;
-}
-
 .ts-intro .btn-primary{
     margin-top: 15px;
 }
