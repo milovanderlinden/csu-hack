@@ -1,0 +1,57 @@
+---
+layout: default
+title: Programma
+---
+<div id="page-banner-area" class="page-banner-area" style="background-image:url({{ '/assets/images/hero-area/bg-main2.jpg' | relative_url }})">
+	<div class="page-banner-title">
+		<div class="text-center">
+			<h2>{{ page.title }}</h2>
+		</div>
+	</div>
+</div>
+<section id="main-container" class="main-container">
+	{% assign j = 0 %}
+	{% for day in site.data.program %}
+	{% assign value = j | modulo:2 %}
+	{% if value == 0 %}
+	<div class="schedule-content">
+		{% else %}
+		<div class="schedule-content pattern-bg">
+		{% endif %}
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="schedule-date">{{ day.id }} / {{day.date }}</h2>
+						{% for listing in day["listings"] %}
+						<div class="schedule-listing {{ listing.class }}">
+							<span class="schedule-slot-time">{{ listing.time }}</span>
+							<div class="schedule-slot-info">
+								{% if listing.image %}
+								<a href="#">
+									<img class="schedule-slot-speakers" src="/assets/images/{{ listing.image }}" alt="" />
+								</a>
+								{% endif %}
+								<div class="schedule-slot-info-content">
+									{% if listing.speaker %}
+									<h3 class="schedule-slot-speaker-name">{{ listing.speaker }}</h3>
+									{% endif %}
+									{% if listing.title %}
+									<h3 class="schedule-slot-title">{{ listing.title }}</h3>
+									{% endif %}
+									{% if listing.description %}
+									<p class="schedule-slot-desc">{{ listing.description }}</p>
+									{% endif %}
+								</div>
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	<div class="gap-60"></div>
+	{% assign j = j | plus: 1 %}
+	{% endfor %}
+</section>
+
+
