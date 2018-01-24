@@ -1,9 +1,69 @@
----
-layout: default
-title: Brightfuture Hack
----
-    <section id="banner">
-      <div class="banner-item bg-overlay" style="background-image:url({{ '/assets/images/hero-area/bg-main2.jpg' | relative_url }})">
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <title>Bright Future - CSU Hackathon 2018</title>
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/assets/css/animate.css">
+  <link rel="stylesheet" href="/assets/css/colorbox.css">
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+    <body>
+      <div class="body-inner">
+        <header id="header" class="header header-transparent">
+  <div class="container">
+    <div class="row">
+      <div class="navbar-header">
+        <div class="logo">
+          <a href="/">
+          </a>
+        </div>
+      </div>
+      <div class="site-nav-inner">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <nav class="collapse navbar-collapse navbar-responsive-collapse pull-right">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#header">Home</a>
+            </li>
+            <li>
+              <a href="#ts-schedule">Programma</a>
+            </li>
+            <li>
+              <a href="#ts-speakers">Sprekers</a>
+            </li>
+            <li>
+              <a href="#ts-venue">Contact</a>
+            </li>
+            <li class="header-ticket">
+              <a class="ticket-btn btn-primary" href="https://www.eventbrite.nl/e/tickets-bright-future-hack-42227879725">
+                <i class="fa fa-ticket"></i> Tickets</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+            <section id="banner">
+      <div class="banner-item bg-overlay" style="background-image:url(/assets/images/hero-area/bg-main2.jpg)">
         <div class="container">
           <div class="banner-content text-center">
             <div class="banner-content-wrap">
@@ -60,7 +120,7 @@ title: Brightfuture Hack
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="intro-video">
-              <img class="img-responsive" src="{{ '/assets/images/intro-video.jpg' | relative_url }}" alt="" />
+              <img class="img-responsive" src="/assets/images/intro-video.jpg" alt="" />
               <a class="popup" href="https://www.youtube.com/embed/_C04bg8eCsM?autoplay=1&amp;loop=1">
                 <div class="video-icon">
                   <i class="fa fa-play"></i>
@@ -106,29 +166,29 @@ title: Brightfuture Hack
         </div>
         <div class="row text-center">
           <div class="col-xs-12 col-sm-6 col-md-3"></div>
-          {% for item in site.data.speakers %}
+          
           <div class="col-xs-12 col-sm-6 col-md-3">
               <div class="ts-speaker">
                 <div class="ts-speaker-image">
-                  <img class="img-responsive" src="/assets/images/speakers/{{ item.id }}.jpg" alt="{{ item.id }}" />
+                  <img class="img-responsive" src="/assets/images/speakers/koert.jpg" alt="koert" />
                   <ul class="social-links">
                     <li>
-                      <a href="{{ item.instagram }}">
+                      <a href="https://www.instagram.com/vanmensvoort/">
                         <i class="fa fa-instagram"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="{{ item.linkedin }}">
+                      <a href="https://www.linkedin.com/in/vanmensvoort/">
                         <i class="fa fa-linkedin"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="{{ item.facebook }}">
+                      <a href="https://www.facebook.com/mensvoort">
                         <i class="fa fa-facebook"></i>
                       </a>
                     </li>
                     <li>
-                      <a href="{{ item.twitter }}">
+                      <a href="https://twitter.com/mensvoort/">
                         <i class="fa fa-twitter"></i>
                       </a>
                     </li>
@@ -136,13 +196,49 @@ title: Brightfuture Hack
                 </div>
                 <div class="ts-speaker-info">
                   <h3 class="ts-speaker-name">
-                    <a href="#">{{ item.name }}</a>
+                    <a href="#">Koert van Mensvoort</a>
                   </h3>
-                  <p class="ts-speaker-designation">{{ item.bio }}</p>
+                  <p class="ts-speaker-designation">Artiest en filosoof bekend van Next Nature, het filosofische concept dat de complexiteit en allesomvattendheid van technologie bekijkt als iets "natuurlijks".</p>
                 </div>
               </div>
             </div>
-          {% endfor %}
+          
+          <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="ts-speaker">
+                <div class="ts-speaker-image">
+                  <img class="img-responsive" src="/assets/images/speakers/jalila.jpg" alt="jalila" />
+                  <ul class="social-links">
+                    <li>
+                      <a href="https://www.instagram.com/explore/tags/jalilaessaidi/">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/essaidi/">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.facebook.com/jalila.essaidi">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/JalilaEssaidi">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-speaker-name">
+                    <a href="#">Jalila Essaïdi</a>
+                  </h3>
+                  <p class="ts-speaker-designation">Onderzoekt de grenzen van veiligheid, door te experimenteren met een kogelwerende matrix van transgenetische spinnen-zijde in menselijke huid.</p>
+                </div>
+              </div>
+            </div>
+          
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3"></div>
         <div class="gap-40"></div>
@@ -189,7 +285,7 @@ title: Brightfuture Hack
                     <span class="schedule-slot-time">10:00</span>
                     <div class="schedule-slot-info">
                       <a href="https://www.linkedin.com/in/kosfourkiotis/">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/kos.jpg' | relative_url }}" alt="" />
+                        <img class="schedule-slot-speakers" src="/assets/images/speakers/kos.jpg" alt="" />
                       </a>
                       <div class="schedule-slot-info-content">
                         <h3 class="schedule-slot-speaker-name">Kos Fourkiotis</h3>
@@ -202,7 +298,7 @@ title: Brightfuture Hack
                     <span class="schedule-slot-time">10:10</span>
                     <div class="schedule-slot-info">
                       <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/milo.jpg' | relative_url }}" alt="" />
+                        <img class="schedule-slot-speakers" src="/assets/images/speakers/milo.jpg" alt="" />
                       </a>
                       <div class="schedule-slot-info-content">
                         <h3 class="schedule-slot-speaker-name">Milo van der Linden</h3>
@@ -215,7 +311,7 @@ title: Brightfuture Hack
                     <span class="schedule-slot-time">10:20</span>
                     <div class="schedule-slot-info">
                       <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/sponsors/csu.png' | relative_url }}" alt="" />
+                        <img class="schedule-slot-speakers" src="/assets/images/sponsors/csu.png" alt="" />
                       </a>
                       <div class="schedule-slot-info-content">
                         <h3 class="schedule-slot-speaker-name"></h3>
@@ -228,7 +324,7 @@ title: Brightfuture Hack
                   <div class="schedule-listing">
                     <span class="schedule-slot-time">10:30</span>
                     <div class="schedule-slot-info">
-                      <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/team.jpg' | relative_url }}" alt="" />
+                      <img class="schedule-slot-speakers" src="/assets/images/speakers/team.jpg" alt="" />
                       <div class="schedule-slot-info-content">
                         <h4 class="schedule-slot-title">Team formation</h4>
                         <p class="schedule-slot-desc">Deelnemers vormen teams</p>
@@ -275,7 +371,7 @@ title: Brightfuture Hack
                     <span class="schedule-slot-time">15:00</span>
                     <div class="schedule-slot-info">
                       <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/koert.jpg' | relative_url }}" alt="" />
+                        <img class="schedule-slot-speakers" src="/assets/images/speakers/koert.jpg" alt="" />
                       </a>
                       <div class="schedule-slot-info-content">
                         <h3 class="schedule-slot-speaker-name">Koert van Mensvoort</h3>
@@ -334,7 +430,7 @@ title: Brightfuture Hack
                     <span class="schedule-slot-time">10:00 - ..</span>
                     <div class="schedule-slot-info">
                       <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/speaker7.jpg' | relative_url }}" alt="" />
+                        <img class="schedule-slot-speakers" src="/assets/images/speakers/speaker7.jpg" alt="" />
                       </a>
                       <div class="schedule-slot-info-content">
                         <h3 class="schedule-slot-speaker-name">Meer volgt</h3>
@@ -388,7 +484,7 @@ title: Brightfuture Hack
             </div>
           </div>
           <div class="col-md-6">
-            <img src="{{ '/assets/images/venue-img.jpg' | relative_url }}" alt="">
+            <img src="/assets/images/venue-img.jpg" alt="">
           </div>
         </div>
         <div class="gap-60"></div>
@@ -396,7 +492,7 @@ title: Brightfuture Hack
           <div class="col-md-4">
             <div class="venu-info-content">
               <span class="venu-info-img">
-                <img src="{{ '/assets/images/icons/transport.png' | relative_url }}" alt="" />
+                <img src="/assets/images/icons/transport.png" alt="" />
               </span>
               <h3 class="venu-info-title">Transport</h3>
               <p class="venu-info-text">Het stadion is te bereiken met het openbaar vervoer. Je kunt lopen vanaf het centraal station in Eindhoven.
@@ -406,7 +502,7 @@ title: Brightfuture Hack
           <div class="col-md-4">
             <div class="venu-info-content">
               <span class="venu-info-img">
-                <img src="{{ '/assets/images/icons/hotel.png' | relative_url }}" alt="" />
+                <img src="/assets/images/icons/hotel.png" alt="" />
               </span>
               <h3 class="venu-info-title">Overnachten</h3>
               <p class="venu-info-text">We krijgen de unieke kans om in het stadion te blijven. Neem zelf iets mee als een slaapzak, of ga de hele
@@ -416,7 +512,7 @@ title: Brightfuture Hack
           <div class="col-md-4">
             <div class="venu-info-content">
               <span class="venu-info-img">
-                <img src="{{ '/assets/images/icons/food.png' | relative_url }}" alt="" />
+                <img src="/assets/images/icons/food.png" alt="" />
               </span>
               <h3 class="venu-info-title">Eten en drinken</h3>
               <p class="venu-info-text">Eten en drinken wordt volledig verzorgd. Details volgen.</p>
@@ -436,3 +532,68 @@ title: Brightfuture Hack
         </div>
       </div>
     </section>
+
+      </div>
+      <footer id="footer" class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-menu">
+            <ul class="nav unstyled">
+              <li>
+                <a href="#header">Home</a>
+              </li>
+              <li>
+                <a href="#ts-schedule">Programma</a>
+              </li>
+              <li>
+                <a href="https://www.eventbrite.nl/e/tickets-bright-future-hack-42227879725l">Tickets</a>
+              </li>
+              <li>
+                <a href="#ts-venue">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/playlist?list=PLB6LNeCIm6l_N-s0YS7UN2dQkPdeScmPG">
+                  <i class="fa fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="copyright-info">
+            <span>Alle rechten voorbehouden.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
+      <button class="btn btn-primary" title="Back to Top">
+        <i class="fa fa-angle-up"></i>
+      </button>
+    </div>
+  </footer>
+  <script type="text/javascript" src="/assets/js/jquery.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.counterup.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.jCounter.js"></script>
+  <script type="text/javascript" src="/assets/js/waypoints.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.colorbox.js"></script>
+  <script type="text/javascript" src="/assets/js/smoothscroll.js"></script>
+  <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyCsa2Mi2HqyEcEnM1urFSIGEpvualYjwwM"></script>
+  <script type="text/javascript" src="/assets/js/gmap3.js"></script>
+  <script type="text/javascript" src="/assets/js/custom.js"></script>
+    </body>
+</html>
