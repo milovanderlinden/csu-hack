@@ -159,197 +159,64 @@ title: Brightfuture Hack
           <div class="col-md-12">
             <div class="schedule-tab">
               <ul class="nav nav-tabs" id="nav-tabs">
+                {% assign i = 0 %}
+                {% for day in site.data.program %}
+                {% if i == 0 %}
                 <li class="active">
-                  <a class="animated fadeIn" href="#tab_one" data-toggle="tab">
+                  {% else %}
+                  <li>
+                  {% endif %}
+                  <a class="animated fadeIn" href="#tab_{{ day.code }}" data-toggle="tab">
                     <span class="tab-head">
-                      <span class="tab-text-title">Dag 1</span>
+                      <span class="tab-text-title">{{ day.id }}</span>
                     </span>
                   </a>
                 </li>
-                <li>
-                  <a class="animated fadeIn" href="#tab_two" data-toggle="tab">
-                    <span class="tab-head">
-                      <span class="tab-text-title">Dag 2</span>
-                    </span>
-                  </a>
-                </li>
+                {% assign i = i | plus: 1 %}
+                {% endfor %}
               </ul>
               <div class="tab-content">
-                <div class="tab-pane active animated fadeInRight" id="tab_one">
-                  <h2 class="schedule-date">Zaterdag, 10 maart</h2>
-                  <div class="schedule-listing lime">
-                    <span class="schedule-slot-time">9:00</span>
+                {% assign i = 0 %}
+                {% for day in site.data.program %}
+                {% if i == 0 %}
+                <div class="tab-pane active animated fadeInRight" id="tab_{{ day.code }}">
+                  {% else %}
+                  <div class="tab-pane animated fadeInRight" id="tab_{{ day.code }}">
+                  {% endif %}
+                
+                  <h2 class="schedule-date">{{ day.date }}</h2>
+                  {% for listing in day["listings"] %}
+                  <div class="schedule-listing {{ listing.class }}">
+                    <span class="schedule-slot-time">{{ listing.time }}</span>
                     <div class="schedule-slot-info">
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-title">Deur open</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing">
-                    <span class="schedule-slot-time">10:00</span>
-                    <div class="schedule-slot-info">
-                      <a href="https://www.linkedin.com/in/kosfourkiotis/">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/kos.jpg' | relative_url }}" alt="" />
-                      </a>
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name">Kos Fourkiotis</h3>
-                        <h4 class="schedule-slot-title">Introductie CSU event</h4>
-                        <p class="schedule-slot-desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing">
-                    <span class="schedule-slot-time">10:10</span>
-                    <div class="schedule-slot-info">
+                      {% if listing.image %}
                       <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/milo.jpg' | relative_url }}" alt="" />
+                        <img class="schedule-slot-speakers" src="/assets/images/{{ listing.image }}" alt="" />
                       </a>
+                      {% endif %}
                       <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name">Milo van der Linden</h3>
-                        <h4 class="schedule-slot-title">Programma overzicht</h4>
-                        <p class="schedule-slot-desc"></p>
+                        {% if listing.speaker %}
+                        <h3 class="schedule-slot-speaker-name">{{ listing.speaker }}</h3>
+                        {% endif %}
+                        {% if listing.title %}
+                        <h3 class="schedule-slot-title">{{ listing.title }}</h3>
+                        {% endif %}
+                        {% if listing.description %}
+                        <p class="schedule-slot-desc">{{ listing.description }}</p>
+                        {% endif %}
                       </div>
                     </div>
                   </div>
-                  <div class="schedule-listing">
-                    <span class="schedule-slot-time">10:20</span>
-                    <div class="schedule-slot-info">
-                      <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/sponsors/csu.png' | relative_url }}" alt="" />
-                      </a>
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name"></h3>
-                        <h4 class="schedule-slot-title">Challenges presentaties</h4>
-                        <p class="schedule-slot-desc">Korte uitleg en toelichting van de challenge en het proces.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing">
-                    <span class="schedule-slot-time">10:30</span>
-                    <div class="schedule-slot-info">
-                      <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/team.jpg' | relative_url }}" alt="" />
-                      <div class="schedule-slot-info-content">
-                        <h4 class="schedule-slot-title">Team formation</h4>
-                        <p class="schedule-slot-desc">Deelnemers vormen teams</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="schedule-listing no-border">
-                    <span class="schedule-slot-time">10:50</span>
-                    <div class="schedule-slot-info">
-                      <h4 class="schedule-slot-title">Team concepts</h4>
-                      <p class="schedule-slot-desc">De teams gaan aan de slag met het bedenken van het concept.</p>
-                    </div>
-                  </div>
-                  <div class="schedule-listing no-border">
-                    <span class="schedule-slot-time">11:00</span>
-                    <div class="schedule-slot-info">
-                      <h4 class="schedule-slot-title">Start hacking</h4>
-                      <p class="schedule-slot-desc"></p>
-                    </div>
-                  </div>
-                  <div class="schedule-listing no-border">
-                    <span class="schedule-slot-time">12:00</span>
-                    <div class="schedule-slot-info">
-                      <h4 class="schedule-slot-title">Shout out</h4>
-                      <p class="schedule-slot-desc">Teams vertellen kort waar ze mee bezig zijn, waar ze tegen aanlopen en wat ze eventueel nodig hebben.</p>
-                    </div>
-                  </div>
-                  <div class="schedule-listing lime">
-                    <span class="schedule-slot-time">13:00</span>
-                    <div class="schedule-slot-info">
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-title">Lunch</h3>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing no-border">
-                    <span class="schedule-slot-time">14:00</span>
-                    <div class="schedule-slot-info">
-                      <h4 class="schedule-slot-title">Herstart</h4>
-                    </div>
-                  </div>
-                  <div class="schedule-listing">
-                    <span class="schedule-slot-time">15:00</span>
-                    <div class="schedule-slot-info">
-                      <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/koert.jpg' | relative_url }}" alt="" />
-                      </a>
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name">Koert van Mensvoort</h3>
-                        <h4 class="schedule-slot-title">Lightning talk</h4>
-                        <p class="schedule-slot-desc">Koert filosofeert met ons over de toekomst.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing lime">
-                    <span class="schedule-slot-time">18:30</span>
-                    <div class="schedule-slot-info">
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name"></h3>
-                        <h4 class="schedule-slot-title">Buffet</h4>
-                        <p class="schedule-slot-desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing no-border">
-                    <div class="schedule-slot-info">
-                      <h4 class="schedule-slot-title">Hacking in progress</h4>
-                      <p class="schedule-slot-desc">Knippen, Plakken, programmeren, zoeken, praten en doen!</p>
-                    </div>
-                  </div>
-                  <div class="schedule-listing lime">
-                    <span class="schedule-slot-time">21:00</span>
-                    <div class="schedule-slot-info">
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name"></h3>
-                        <h4 class="schedule-slot-title">Snacks</h4>
-                        <p class="schedule-slot-desc"></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing no-border">
-                    <div class="schedule-slot-info">
-                      <h4 class="schedule-slot-title">Hacking in progress</h4>
-                      <p class="schedule-slot-desc">Hard aan de slag. Het kan tot in de late uren (vergeet niet te ontspannen). Eventueel kan er ook echt
-                        geslapen worden.
-                      </p>
-                    </div>
-                  </div>
+                  {% endfor %}
                 </div>
-                <div class="tab-pane animated fadeInRight" id="tab_two">
-                  <h2 class="schedule-date">Zondag 11 maart</h2>
-                  <div class="schedule-listing bg">
-                    <span class="schedule-slot-time">9:00 - 10:00</span>
-                    <div class="schedule-slot-info">
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-title">Deuren open</h3>
-                        <p class="schedule-slot-desc">Meld je aan, neem wat te drinken en ontmoet de anderen.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="schedule-listing">
-                    <span class="schedule-slot-time">10:00 - ..</span>
-                    <div class="schedule-slot-info">
-                      <a href="#">
-                        <img class="schedule-slot-speakers" src="{{ '/assets/images/speakers/speaker7.jpg' | relative_url }}" alt="" />
-                      </a>
-                      <div class="schedule-slot-info-content">
-                        <h3 class="schedule-slot-speaker-name">Meer volgt</h3>
-                        <h4 class="schedule-slot-title">?</h4>
-                        <p class="schedule-slot-desc">Aan het programma wordt gewerkt.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                {% assign i = i | plus: 1 %}
+                {% endfor %}
               <div class="gap-60"></div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     </section>
 
     <section id="ts-venue" class="ts-venue no-padding">
