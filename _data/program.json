@@ -68,9 +68,9 @@
         "time": "15:00",
         "class": "",
         "title": "Lightning talk",
-        "speaker": "Koert van Mensvoort",
-        "description": "Koert filosofeert met ons over de toekomst.",
-        "image": "speakers/koert.jpg"
+        "speaker": "Jalila Essaïdi",
+        "description": "Jalila filosofeert met ons over de toekomst.",
+        "image": "speakers/jalila.jpg"
       },
       {
         "time": "18:30",
@@ -103,7 +103,36 @@
       {
         "time": "09:00",
         "class": "lime",
-        "title": "Deur open"
+        "title": "Ontbijt"
+      },
+      {
+        "time": "11:00",
+        "class": "",
+        "title": "Final concept definition"
+      },{
+        "time": "13:00",
+        "class": "lime",
+        "title": "Lunch"
+      },{
+        "time": "14:00",
+        "class": "",
+        "title": "Pitch training"
+      },{
+        "time": "15:00",
+        "class": "",
+        "title": "Pitches to Jury!"
+      },{
+        "time": "16:30",
+        "class": "",
+        "title": "Borrel"
+      },{
+        "time": "17:00",
+        "class": "",
+        "title": "Jury verdict / prizes / celebration"
+      },{
+        "time": "17:30 - 18:00",
+        "class": "",
+        "title": "Borrel upgrade"
       }
     ]
   }

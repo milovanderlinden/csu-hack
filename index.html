@@ -265,8 +265,7 @@ title: Home
                 <img src="{{ '/assets/images/icons/transport.png' | relative_url }}" alt="" />
               </span>
               <h3 class="venu-info-title">Transport</h3>
-              <p class="venu-info-text">Het stadion is te bereiken met het openbaar vervoer. Je kunt lopen vanaf het centraal station in Eindhoven.
-                Bij het stadion zit een parkeergarage waar je voor &eur;6 per dag kunt parkeren.</p>
+              <p class="venu-info-text">{{ site.data.event.venue.transport }}</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -275,8 +274,7 @@ title: Home
                 <img src="{{ '/assets/images/icons/hotel.png' | relative_url }}" alt="" />
               </span>
               <h3 class="venu-info-title">Overnachten</h3>
-              <p class="venu-info-text">We krijgen de unieke kans om in het stadion te blijven. Neem zelf iets mee als een slaapzak, of ga de hele
-                nacht door. Dat is aan jou.</p>
+              <p class="venu-info-text">{{ site.data.event.venue.stay }}</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -285,7 +283,7 @@ title: Home
                 <img src="{{ '/assets/images/icons/food.png' | relative_url }}" alt="" />
               </span>
               <h3 class="venu-info-title">Eten en drinken</h3>
-              <p class="venu-info-text">Eten en drinken wordt volledig verzorgd. Details volgen.</p>
+              <p class="venu-info-text">{{ site.data.event.venue.food }}</p>
 
             </div>
           </div>
