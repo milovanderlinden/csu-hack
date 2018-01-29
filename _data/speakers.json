@@ -2,10 +2,25 @@
   {
     "id": "jalila",
     "name": "Jalila Essaïdi",
-    "bio": "Onderzoekt de grenzen van veiligheid, door te experimenteren met een kogelwerende matrix van transgenetische spinnen-zijde in menselijke huid.",
+    "bio": "Jurylid",
     "instagram": "https://www.instagram.com/explore/tags/jalilaessaidi/",
     "twitter": "https://twitter.com/JalilaEssaidi",
     "linkedin": "https://www.linkedin.com/in/essaidi/",
     "facebook": "https://www.facebook.com/jalila.essaidi"
+  },
+  {
+    "id": "nicole",
+    "name": "Nicole Segers",
+    "bio": "Jurylid/Spreker",
+    "linkedin": "https://nl.linkedin.com/in/nicolesegers/nl",
+    "facebook": "https://www.facebook.com/nicole.segers.39"
+  },
+  {
+    "id": "michael",
+    "name": "Michael Dawkins",
+    "bio": "Spreker",
+    "twitter": "https://twitter.com/Michael_Dawkins",
+    "linkedin": "https://nl.linkedin.com/in/mjdawkins",
+    "facebook": "https://www.facebook.com/people/Michael-J-Dawkins/100001925651452"
   }
 ]

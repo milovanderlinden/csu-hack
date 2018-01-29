@@ -112,26 +112,34 @@ title: Home
                 <div class="ts-speaker-image">
                   <img class="img-responsive" src="/assets/images/speakers/{{ item.id }}.jpg" alt="{{ item.id }}" />
                   <ul class="social-links">
+                    {% if item.instagram %}
                     <li>
                       <a href="{{ item.instagram }}">
                         <i class="fa fa-instagram"></i>
                       </a>
                     </li>
+                    {% endif %}
+                    {% if item.linkedin %}
                     <li>
                       <a href="{{ item.linkedin }}">
                         <i class="fa fa-linkedin"></i>
                       </a>
                     </li>
+                    {% endif %}
+                    {% if item.facebook %}
                     <li>
                       <a href="{{ item.facebook }}">
                         <i class="fa fa-facebook"></i>
                       </a>
                     </li>
+                    {% endif %}
+                    {% if item.twitter %}
                     <li>
                       <a href="{{ item.twitter }}">
                         <i class="fa fa-twitter"></i>
                       </a>
                     </li>
+                    {% endif %}
                   </ul>
                 </div>
                 <div class="ts-speaker-info">
