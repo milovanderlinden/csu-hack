@@ -29,7 +29,7 @@ title: Home
               <h2 class="banner-subtitle">{{ site.data.event.date }}, {{ site.data.event.year }}</h2>
               <h3 class="banner-desc">{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
               <p class="banner-btn">
-                <a href="{{ site.data.event.tickets }}" class="btn btn-primary">Tickets</a>
+                <a href="{{ site.data.event.tickets }}" class="btn btn-primary" target="_blank">Tickets</a>
               </p>
             </div>
           </div>
@@ -55,7 +55,7 @@ title: Home
               uitdagingen?
             </p>
             <p class="banner-btn">
-              <a href="{{ site.data.event.tickets }}">Meld je aan!</a>
+              <a href="{{ site.data.event.tickets }}" target="_blank">Meld je aan!</a>
             </p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6">
@@ -82,7 +82,7 @@ title: Home
             prettig en gezond is. De manier waarop de schoonmaakdienstverlening door specialistische bedrijven wordt uitgevoerd,
             lijkt heel erg op de manier waarop dat 50 jaar geleden gebeurde. Er is relatief weinig geïnnoveerd vergeleken
             bij andere branches, die in sommige gevallen hun taken totaal anders uitvoeren én organiseren. Denk aan de productie,
-            de logistiek, de techniek of de financiële dienstverlening. De stofzuiger en de microvezeldoek zijn een van de
+            de logistiek, de techniek of de financiële dienstverlening. De stofzuiger en de microvezeldoek zijn één van de
             weinige producten die in al die jaren een intrede in deze branche hebben gemaakt en in hun tijd als disruptief
             zijn ervaren.
           </p>
@@ -112,28 +112,28 @@ title: Home
                   <ul class="social-links">
                     {% if item.instagram %}
                     <li>
-                      <a href="{{ item.instagram }}">
+                      <a href="{{ item.instagram }}" target="_blank">
                         <i class="fa fa-instagram"></i>
                       </a>
                     </li>
                     {% endif %}
                     {% if item.linkedin %}
                     <li>
-                      <a href="{{ item.linkedin }}">
+                      <a href="{{ item.linkedin }}" target="_blank">
                         <i class="fa fa-linkedin"></i>
                       </a>
                     </li>
                     {% endif %}
                     {% if item.facebook %}
                     <li>
-                      <a href="{{ item.facebook }}">
+                      <a href="{{ item.facebook }}" target="_blank">
                         <i class="fa fa-facebook"></i>
                       </a>
                     </li>
                     {% endif %}
                     {% if item.twitter %}
                     <li>
-                      <a href="{{ item.twitter }}">
+                      <a href="{{ item.twitter }}" target="_blank">
                         <i class="fa fa-twitter"></i>
                       </a>
                     </li>

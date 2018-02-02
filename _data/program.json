@@ -68,14 +68,32 @@
         "time": "15:00",
         "class": "",
         "title": "Lightning talk",
-        "speaker": "Jalila Essaïdi",
-        "description": "Jalila filosofeert met ons over de toekomst.",
-        "image": "speakers/jalila.jpg"
+        "speaker": "Nicole Segers",
+        "description": "Nicole filosofeert met ons over de toekomst.",
+        "image": "speakers/nicole.jpg"
+      },
+      {
+        "time": "",
+        "class": "no-border",
+        "title": "Hacking in progress"
       },
       {
         "time": "18:30",
         "class": "lime",
         "title": "Buffet"
+      },
+      {
+        "time": "",
+        "class": "no-border",
+        "title": "Hacking in progress"
+      },
+      {
+        "time": "19:00",
+        "class": "",
+        "title": "Lightning talk",
+        "speaker": "Michael Hawkins",
+        "description": "Michael heeft een eigenwijze kijk op de toekomst. Kan hij jou inspireren?",
+        "image": "speakers/michael.jpg"
       },
       {
         "time": "",
@@ -132,7 +150,7 @@
       },{
         "time": "17:30 - 18:00",
         "class": "",
-        "title": "Borrel upgrade"
+        "title": "Borrel"
       }
     ]
   }
