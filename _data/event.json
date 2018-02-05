@@ -2,7 +2,10 @@
   "name": "Bright Future",
   "year": 2018,
   "organisation": "CSU",
-  "date": "10 t/m 11 maart",
+  "date": {
+    "nl":"10 t/m 11 maart",
+    "en":"March 10 and 11"
+  },
   "tickets": "https://www.eventbrite.nl/e/tickets-bright-future-hack-42227879725",
   "venue": {
     "name": "Philips Stadion",
@@ -10,9 +13,21 @@
     "phone": "+31(06) 51 05 86 44",
     "email": "info@madlab.nl",
     "address": "Frederiklaan 10A, 5616 NH Eindhoven",
-    "description": "De hackathon vindt plaats in het Philips Stadion. Een unieke locatie die mogelijk is gemaakt dankzij de samenwerking tussen CSU en het stadion.",
-    "transport": "Het stadion is te bereiken met het openbaar vervoer. Je kunt lopen vanaf het centraal station in Eindhoven. Bij het stadion zit een parkeergarage. Parkeerkaarten worden vergoed door CSU. Neem contact op wanneer je hier gebruik van wilt maken.",
-    "stay": "We krijgen de unieke kans om in het stadion te blijven. Neem zelf een luchtbed en slaapzak mee, of ga de hele nacht door!",
-    "food": "Eten en drinken wordt volledig verzorgd. Details volgen."
+    "description": {
+      "nl": "De hackathon vindt plaats in het Philips Stadion. Een unieke locatie die mogelijk is gemaakt dankzij de samenwerking tussen CSU en het stadion.",
+      "en": "The hackathon will take place in the Philips Stadion. A unique location made possible thanks to the cooperation between CSU and the stadium."
+    },
+    "transport": {
+      "nl":"Het stadion is te bereiken met het openbaar vervoer. Je kunt lopen vanaf het centraal station in Eindhoven. Bij het stadion zit een parkeergarage. Parkeerkaarten worden vergoed door CSU. Neem contact op wanneer je hier gebruik van wilt maken.",
+      "en":"The venue can be reached by public transport. You can walk from Eindhoven Central Station. There is a parking garage at the venue. Tickets for the garage are available and will be payed by CSU. Contact us if you want to have a garage ticket reserved for you."
+    },
+    "stay": {
+      "nl":"We krijgen de unieke kans om in het stadion te blijven. Neem zelf een luchtbed en slaapzak mee, of ga de hele nacht door!",
+      "en":"We have the unique opportunity to spend the night in the Stadium! Bring a sleeping bag and matras, or stay awake all night!"
+    },
+    "food": {
+      "nl":"Eten en drinken wordt volledig verzorgd. Details volgen.",
+      "en":"Food and drinks are taken care of. Details will follow."
+    }
   }
 }

@@ -5,16 +5,29 @@
           <div class="footer-menu">
             <ul class="nav unstyled">
               <li>
-                <a href="/index.html">Home</a>
+                {% if page.lang == "en" %}
+                <a href="/en">Home</a>
+                {% else %}
+                <a href="/">Home</a>
+                {% endif %}
               </li>
               <li>
-                <a href="/programma.html">Programma</a>
+                  {% if page.lang == "en" %}
+                  <a href="/en/program">Program</a>
+                  {% else %}
+                  <a href="/programma">Programma</a>
+                  {% endif %}
+                
               </li>
               <li>
                 <a href="{{ site.data.event.tickets }}" target="_blank">Tickets</a>
               </li>
               <li>
-                <a href="#ts-venue">Contact</a>
+                  {% if page.lang == "en" %}
+                  <a href="/en/venue">Venue</a>
+                  {% else %}
+                  <a href="/locatie">Locatie</a>
+                  {% endif %}
               </li>
             </ul>
           </div>
@@ -38,7 +51,11 @@
             </ul>
           </div>
           <div class="copyright-info">
-            <span>Alle rechten voorbehouden.</span>
+              {% if page.lang == "en" %}
+              <span>All rights reserved.</span>
+              {% else %}
+              <span>Alle rechten voorbehouden.</span>
+              {% endif %}
           </div>
         </div>
       </div>

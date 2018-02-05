@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+lang: nl
+permalink: index
 ---
     <section id="banner">
       <div class="banner-item bg-overlay" style="background-image:url(/assets/images/hero-area/bg-main2.jpg)">
@@ -26,7 +28,7 @@ title: Home
                 </div>
               </div>
               <h1 class="banner-title">{{ site.data.event.name }}</h1>
-              <h2 class="banner-subtitle">{{ site.data.event.date }}, {{ site.data.event.year }}</h2>
+              <h2 class="banner-subtitle">{{ site.data.event.date.nl }}, {{ site.data.event.year }}</h2>
               <h3 class="banner-desc">{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
               <p class="banner-btn">
                 <a href="{{ site.data.event.tickets }}" class="btn btn-primary" target="_blank">Tickets</a>
@@ -55,7 +57,7 @@ title: Home
               uitdagingen?
             </p>
             <p class="banner-btn">
-              <a href="{{ site.data.event.tickets }}" target="_blank">Meld je aan!</a>
+                <a class="btn btn-primary" href="{{ site.data.event.tickets }}" target="_blank">Meld je aan!</a>
             </p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6">
@@ -144,7 +146,7 @@ title: Home
                   <h3 class="ts-speaker-name">
                     <a href="#">{{ item.name }}</a>
                   </h3>
-                  <p class="ts-speaker-designation">{{ item.bio }}</p>
+                  <p class="ts-speaker-designation">{{ item.bio.nl }}</p>
                 </div>
               </div>
             </div>
@@ -173,7 +175,7 @@ title: Home
                   {% endif %}
                   <a class="animated fadeIn" href="#tab_{{ day.code }}" data-toggle="tab">
                     <span class="tab-head">
-                      <span class="tab-text-title">{{ day.id }}</span>
+                      <span class="tab-text-title">{{ day.id.nl }}</span>
                     </span>
                   </a>
                 </li>
@@ -189,7 +191,7 @@ title: Home
                   <div class="tab-pane animated fadeInRight" id="tab_{{ day.code }}">
                   {% endif %}
                 
-                  <h2 class="schedule-date">{{ day.date }}</h2>
+                  <h2 class="schedule-date">{{ day.date.nl }}</h2>
                   {% for listing in day["listings"] %}
                   <div class="schedule-listing {{ listing.class }}">
                     <span class="schedule-slot-time">{{ listing.time }}</span>
@@ -204,10 +206,10 @@ title: Home
                         <h3 class="schedule-slot-speaker-name">{{ listing.speaker }}</h3>
                         {% endif %}
                         {% if listing.title %}
-                        <h3 class="schedule-slot-title">{{ listing.title }}</h3>
+                        <h3 class="schedule-slot-title">{{ listing.title.nl }}</h3>
                         {% endif %}
                         {% if listing.description %}
-                        <p class="schedule-slot-desc">{{ listing.description }}</p>
+                        <p class="schedule-slot-desc">{{ listing.description.nl }}</p>
                         {% endif %}
                       </div>
                     </div>
@@ -233,7 +235,7 @@ title: Home
         <div class="row">
           <div class="col-md-6">
             <h3>{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
-            <p>{{ site.data.event.venue.description }}</p>
+            <p>{{ site.data.event.venue.description.nl }}</p>
             <div class="contact-info">
               <div class="contact-info-box">
                 <i class="fa fa-map-marker">&nbsp;</i>
@@ -270,7 +272,7 @@ title: Home
                 <img src="{{ '/assets/images/icons/transport.png' | relative_url }}" alt="" />
               </span>
               <h3 class="venu-info-title">Transport</h3>
-              <p class="venu-info-text">{{ site.data.event.venue.transport }}</p>
+              <p class="venu-info-text">{{ site.data.event.venue.transport.nl }}</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -279,7 +281,7 @@ title: Home
                 <img src="{{ '/assets/images/icons/hotel.png' | relative_url }}" alt="" />
               </span>
               <h3 class="venu-info-title">Overnachten</h3>
-              <p class="venu-info-text">{{ site.data.event.venue.stay }}</p>
+              <p class="venu-info-text">{{ site.data.event.venue.stay.nl }}</p>
             </div>
           </div>
           <div class="col-md-4">
@@ -288,7 +290,7 @@ title: Home
                 <img src="{{ '/assets/images/icons/food.png' | relative_url }}" alt="" />
               </span>
               <h3 class="venu-info-title">Eten en drinken</h3>
-              <p class="venu-info-text">{{ site.data.event.venue.food }}</p>
+              <p class="venu-info-text">{{ site.data.event.venue.food.nl }}</p>
 
             </div>
           </div>

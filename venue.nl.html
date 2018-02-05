@@ -1,0 +1,82 @@
+---
+layout: default
+title: Locatie
+permalink: locatie
+lang: nl
+---
+<div id="page-banner-area" class="page-banner-area" style="background-image:url(/assets/images/hero-area/bg-main2.jpg)">
+		<div class="page-banner-title">
+        	<div class="text-center">
+	        	<h2>{{ page.title }}</h2>
+         </div>
+      </div>
+	</div>
+	<section id="main-container" class="main-container">
+		<div class="container">
+			<div class="row text-center">
+				<h2 class="section-title">Waar en wat?</h2>
+				<p class="section-sub-title">Locatie en informatie</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
+					<p>{{ site.data.event.venue.description.nl }}</p>
+					<div class="contact-info">
+						<div class="contact-info-box">
+							<i class="fa fa-map-marker">&nbsp;</i>
+							<div class="contact-info-box-content">
+								<h4>Adres: </h4>
+								<p>{{ site.data.event.venue.address }}</p>
+							</div>
+						</div>
+						<div class="contact-info-box">
+							<i class="fa fa-envelope-o">&nbsp;</i>
+							<div class="contact-info-box-content">
+								<h4>Email: </h4>
+								<p>{{ site.data.event.venue.email }}</p>
+							</div>
+						</div>
+						<div class="contact-info-box">
+							<i class="fa fa-phone">&nbsp;</i>
+							<div class="contact-info-box-content">
+								<h4>Telefoon: </h4>
+								<p>{{ site.data.event.venue.phone }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<img src="/assets/images/venue-img.jpg" alt="">
+				</div>
+			</div>
+			<div class="gap-60"></div>
+			<div id="map" class="map"></div>
+			<div class="gap-60"></div>
+			<div class="row text-center">
+				<div class="col-md-4">
+					<div class="venu-info-content">
+						<span class="venu-info-img"><img src="/assets/images/icons/transport.png" alt="" /></span>
+						<h3 class="venu-info-title">Transport</h3>
+						<p class="venu-info-text">{{ site.data.event.venue.transport.nl }}</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="venu-info-content">
+						<span class="venu-info-img"><img src="/assets/images/icons/hotel.png" alt="" /></span>
+						<h3 class="venu-info-title">Overnachten</h3>
+						<p class="venu-info-text">{{ site.data.event.venue.stay.en }}</p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="venu-info-content">
+						<span class="venu-info-img"><img src="/assets/images/icons/food.png" alt="" /></span>
+						<h3 class="venu-info-title">Eten en drinken</h3>
+						<p class="venu-info-text">{{ site.data.event.venue.food.nl }}</p>
+						<a href="#" class="venu-info-link">Read More <i class="fa fa-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+

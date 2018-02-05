@@ -3,8 +3,11 @@
     <div class="row">
       <div class="navbar-header">
         <div class="logo">
-          <a href="{{ '/' | relative_url }}">
-          </a>
+            {% if page.lang == "en" %}
+            <a href="/en"></a>
+            {% else %}
+            <a href="/"></a>
+            {% endif %}
         </div>
       </div>
       <div class="site-nav-inner">
@@ -17,21 +20,38 @@
         <nav class="collapse navbar-collapse navbar-responsive-collapse pull-right">
           <ul class="nav navbar-nav">
             <li>
-              <a href="/index.html">Home</a>
+                {% if page.lang == "en" %}
+                <a href="/en">Home</a>
+                {% else %}
+                <a href="/">Home</a>
+                {% endif %}
             </li>
             <li>
-              <a href="/programma.html">Programma</a>
+                {% if page.lang == "en" %}
+                <a href="/en/program">Program</a>
+                {% else %}
+                <a href="/programma">Programma</a>
+                {% endif %}
             </li>
             <li>
-              <a href="#ts-speakers">Sprekers</a>
-            </li>
-            <li>
-              <a href="#ts-venue">Contact</a>
+                {% if page.lang == "en" %}
+                <a href="/en/venue">Venue</a>
+                {% else %}
+                <a href="/locatie">Locatie</a>
+                {% endif %}
             </li>
             <li class="header-ticket">
-              <a class="ticket-btn btn-primary" href="{{ site.data.event.tickets }}" target="_blank">
-                <i class="fa fa-ticket"></i> Tickets</a>
+                <a class="ticket-btn btn-primary" href="{{ site.data.event.tickets }}" target="_blank">
+                  <i class="fa fa-ticket"></i> Tickets</a>
+              </li>
+            <li>
+                {% if page.lang == "en" %}
+                <a href="/">Nederlands</a>
+                {% else %}
+                <a href="/en">English</a>
+                {% endif %}
             </li>
+            
           </ul>
         </nav>
       </div>

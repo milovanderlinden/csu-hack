@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Programma
+lang: nl
+permalink: programma
 ---
 <div id="page-banner-area" class="page-banner-area" style="background-image:url({{ '/assets/images/hero-area/bg-main2.jpg' | relative_url }})">
 	<div class="page-banner-title">
@@ -21,7 +23,7 @@ title: Programma
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="schedule-date">{{ day.id }} / {{day.date }}</h2>
+						<h2 class="schedule-date">{{ day.id.nl }} / {{day.date.en }}</h2>
 						{% for listing in day["listings"] %}
 						<div class="schedule-listing {{ listing.class }}">
 							<span class="schedule-slot-time">{{ listing.time }}</span>
@@ -36,10 +38,10 @@ title: Programma
 									<h3 class="schedule-slot-speaker-name">{{ listing.speaker }}</h3>
 									{% endif %}
 									{% if listing.title %}
-									<h3 class="schedule-slot-title">{{ listing.title }}</h3>
+									<h3 class="schedule-slot-title">{{ listing.title.nl }}</h3>
 									{% endif %}
 									{% if listing.description %}
-									<p class="schedule-slot-desc">{{ listing.description }}</p>
+									<p class="schedule-slot-desc">{{ listing.description.nl }}</p>
 									{% endif %}
 								</div>
 							</div>

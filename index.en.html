@@ -1,0 +1,309 @@
+---
+layout: default
+title: Home
+lang: en
+permalink: en/index
+---
+    <section id="banner">
+      <div class="banner-item bg-overlay" style="background-image:url(/assets/images/hero-area/bg-main2.jpg)">
+        <div class="container">
+          <div class="banner-content text-center">
+            <div class="banner-content-wrap">
+              <div class="countdown bg-style">
+                <div class="counter-day">
+                  <span class="days">00</span>
+                  <div class="smalltext">Days</div>
+                </div>
+                <div class="counter-hour">
+                  <span class="hours">00</span>
+                  <div class="smalltext">Hour</div>
+                </div>
+                <div class="counter-minute">
+                  <span class="minutes">00</span>
+                  <div class="smalltext">Minutes</div>
+                </div>
+                <div class="counter-second">
+                  <span class="seconds">00</span>
+                  <div class="smalltext">Seconds</div>
+                </div>
+              </div>
+              <h1 class="banner-title">{{ site.data.event.name }}</h1>
+              <h2 class="banner-subtitle">{{ site.data.event.date.en }}, {{ site.data.event.year }}</h2>
+              <h3 class="banner-desc">{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
+              <p class="banner-btn">
+                <a href="{{ site.data.event.tickets }}" class="btn btn-primary" target="_blank">Tickets</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ts-intro" class="ts-intro no-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="gap-60"></div>
+            <h2 class="intro-title">About the Hackathon</h2>
+            <h3 class="intro-sub-title">Take us to the future</h3>
+            <p class="intro-desc">Do you want to wake up a billion euro industry? Do you enjoy disruption and impactful challenges? CSU organizes
+                a hackathon to hear from smart outsiders which current and future developments the cleaning industry
+                can take. CSU also wants to know which developments they have to take care of
+                that will influence the cleaning services. We look for an 'out of the box' view of our profession.
+                We even dare to ask the question, to what extent is cleaning necessary in the future?
+            </p>
+            <p>Ideas that emerge from the hackathon could turn the cleaning industry upside down. Want
+                to help make this change? Are you a techie, business expert, sociologist, futurist, data scientist,
+                developer or you have expertise from a surprising angle to contribute to disrupting and impactfull
+                challenges?
+            </p>
+            <p class="banner-btn">
+              <a class="btn btn-primary" href="{{ site.data.event.tickets }}" target="_blank">Sign up!</a>
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="intro-video">
+              <img class="img-responsive" src="{{ '/assets/images/intro-video.jpg' | relative_url }}" alt="" />
+              <a class="popup" href="https://www.youtube.com/embed/_C04bg8eCsM?autoplay=1&amp;loop=1">
+                <div class="video-icon">
+                  <i class="fa fa-play"></i>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="ts-challenge" class="ts-challenge no-padding">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6">
+          <div class="gap-60"></div>
+          <h2 class="intro-title">Are you ready for the challenge?</h2>
+          <h3 class="intro-sub-title">Challenge</h3>
+          <p class="intro-desc">
+              Cleaning as part of the total facility services ensures that the environment where people work and live
+              pleasant and healthy. The way in which cleaning services are carried out by specialist companies,
+              looks very much like the way it happened 50 years ago. There is relatively little innovation compared
+              at other branches, which in some cases perform and organize their tasks completely differently. Think about the production,
+              logistics, technology or financial services. The vacuum cleaner and the microfibre cloth are one of the
+              few products that have made an entry in this industry in all those years and disruptive in their time
+              are experienced.
+          </p>
+          <p>CSU, a cleaning organization with 25 thousand employees, exists exactly 50 years and is known all the time
+              as an innovative organization. However, the world is moving faster and faster and CSU challenges you to move forward with us
+              to look at developments that seem to be increasingly fast. The cleaning work will change,
+              the employee develops and the labor market as well. These three pillars will also strongly influence each other.
+              But how do they develop themselves? Which technological, digital, economic, ecological and socially social
+              are we going to see trends that could affect this?
+          </p>
+        </div>
+        <div class="gap-30"></div>
+      </div>
+    </section>
+
+    <section id="ts-speakers" class="ts-speakers gradient-bg">
+      <div class="container">
+        <div class="row text-center">
+          <h3 class="section-sub-title title-white">Speakers and Jury</h3>
+        </div>
+        <div class="row text-center">
+          {% for item in site.data.speakers %}
+          <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="ts-speaker">
+                <div class="ts-speaker-image">
+                  <img class="img-responsive" src="/assets/images/speakers/{{ item.id }}.jpg" alt="{{ item.id }}" />
+                  <ul class="social-links">
+                    {% if item.instagram %}
+                    <li>
+                      <a href="{{ item.instagram }}" target="_blank">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if item.linkedin %}
+                    <li>
+                      <a href="{{ item.linkedin }}" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if item.facebook %}
+                    <li>
+                      <a href="{{ item.facebook }}" target="_blank">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                    </li>
+                    {% endif %}
+                    {% if item.twitter %}
+                    <li>
+                      <a href="{{ item.twitter }}" target="_blank">
+                        <i class="fa fa-twitter"></i>
+                      </a>
+                    </li>
+                    {% endif %}
+                  </ul>
+                </div>
+                <div class="ts-speaker-info">
+                  <h3 class="ts-speaker-name">
+                    <a href="#">{{ item.name }}</a>
+                  </h3>
+                  <p class="ts-speaker-designation">{{ item.bio.en }}</p>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="gap-40"></div>
+      </div>
+    </section>
+
+    <section id="ts-schedule" class="ts-schedule no-padding">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-title">What will we do?</h2>
+          <h3 class="section-sub-title">Program</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="schedule-tab">
+              <ul class="nav nav-tabs" id="nav-tabs">
+                {% assign i = 0 %}
+                {% for day in site.data.program %}
+                {% if i == 0 %}
+                <li class="active">
+                  {% else %}
+                  <li>
+                  {% endif %}
+                  <a class="animated fadeIn" href="#tab_{{ day.code }}" data-toggle="tab">
+                    <span class="tab-head">
+                      <span class="tab-text-title">{{ day.id.en }}</span>
+                    </span>
+                  </a>
+                </li>
+                {% assign i = i | plus: 1 %}
+                {% endfor %}
+              </ul>
+              <div class="tab-content">
+                {% assign i = 0 %}
+                {% for day in site.data.program %}
+                {% if i == 0 %}
+                <div class="tab-pane active animated fadeInRight" id="tab_{{ day.code }}">
+                  {% else %}
+                  <div class="tab-pane animated fadeInRight" id="tab_{{ day.code }}">
+                  {% endif %}
+                
+                  <h2 class="schedule-date">{{ day.date.en }}</h2>
+                  {% for listing in day["listings"] %}
+                  <div class="schedule-listing {{ listing.class }}">
+                    <span class="schedule-slot-time">{{ listing.time }}</span>
+                    <div class="schedule-slot-info">
+                      {% if listing.image %}
+                      <a href="#">
+                        <img class="schedule-slot-speakers" src="/assets/images/{{ listing.image }}" alt="" />
+                      </a>
+                      {% endif %}
+                      <div class="schedule-slot-info-content">
+                        {% if listing.speaker %}
+                        <h3 class="schedule-slot-speaker-name">{{ listing.speaker }}</h3>
+                        {% endif %}
+                        {% if listing.title %}
+                        <h3 class="schedule-slot-title">{{ listing.title.en }}</h3>
+                        {% endif %}
+                        {% if listing.description %}
+                        <p class="schedule-slot-desc">{{ listing.description.en }}</p>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+                {% assign i = i | plus: 1 %}
+                {% endfor %}
+              <div class="gap-60"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section id="ts-venue" class="ts-venue no-padding">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="section-title">Where and what?</h2>
+          <h3 class="section-sub-title">Location and information</h3>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <h3>{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
+            <p>{{ site.data.event.venue.description.en }}</p>
+            <div class="contact-info">
+              <div class="contact-info-box">
+                <i class="fa fa-map-marker">&nbsp;</i>
+                <div class="contact-info-box-content">
+                  <h4>Address: </h4>
+                  <p>{{ site.data.event.venue.address }}</p>
+                </div>
+              </div>
+              <div class="contact-info-box">
+                <i class="fa fa-envelope-o">&nbsp;</i>
+                <div class="contact-info-box-content">
+                  <h4>Email: </h4>
+                  <p>{{ site.data.event.venue.email }}</p>
+                </div>
+              </div>
+              <div class="contact-info-box">
+                <i class="fa fa-phone">&nbsp;</i>
+                <div class="contact-info-box-content">
+                  <h4>Phone: </h4>
+                  <p>{{ site.data.event.venue.phone }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img src="{{ '/assets/images/venue-img.jpg' | relative_url }}" alt="">
+          </div>
+        </div>
+        <div class="gap-60"></div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <div class="venu-info-content">
+              <span class="venu-info-img">
+                <img src="{{ '/assets/images/icons/transport.png' | relative_url }}" alt="" />
+              </span>
+              <h3 class="venu-info-title">Transport</h3>
+              <p class="venu-info-text">{{ site.data.event.venue.transport.en }}</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="venu-info-content">
+              <span class="venu-info-img">
+                <img src="{{ '/assets/images/icons/hotel.png' | relative_url }}" alt="" />
+              </span>
+              <h3 class="venu-info-title">Stay</h3>
+              <p class="venu-info-text">{{ site.data.event.venue.stay.en }}</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="venu-info-content">
+              <span class="venu-info-img">
+                <img src="{{ '/assets/images/icons/food.png' | relative_url }}" alt="" />
+              </span>
+              <h3 class="venu-info-title">Food and drinks</h3>
+              <p class="venu-info-text">{{ site.data.event.venue.food.en }}</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="venu-map no-padding">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <div id="map" class="map-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </section>

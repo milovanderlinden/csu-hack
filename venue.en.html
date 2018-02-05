@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Locatie
+permalink: en/venue
 ---
 <div id="page-banner-area" class="page-banner-area" style="background-image:url(/assets/images/hero-area/bg-main2.jpg)">
 		<div class="page-banner-title">
@@ -18,7 +19,7 @@ title: Locatie
 			<div class="row">
 				<div class="col-md-6">
 					<h3>{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}</h3>
-					<p>{{ site.data.event.venue.description }}</p>
+					<p>{{ site.data.event.venue.description.en }}</p>
 					<div class="contact-info">
 						<div class="contact-info-box">
 							<i class="fa fa-map-marker">&nbsp;</i>
@@ -55,21 +56,21 @@ title: Locatie
 					<div class="venu-info-content">
 						<span class="venu-info-img"><img src="/assets/images/icons/transport.png" alt="" /></span>
 						<h3 class="venu-info-title">Transport</h3>
-						<p class="venu-info-text">{{ site.data.event.venue.transport }}</p>
+						<p class="venu-info-text">{{ site.data.event.venue.transport.en }}</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="venu-info-content">
 						<span class="venu-info-img"><img src="/assets/images/icons/hotel.png" alt="" /></span>
 						<h3 class="venu-info-title">Overnachten</h3>
-						<p class="venu-info-text">{{ site.data.event.venue.stay }}</p>
+						<p class="venu-info-text">{{ site.data.event.venue.stay.en }}</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="venu-info-content">
 						<span class="venu-info-img"><img src="/assets/images/icons/food.png" alt="" /></span>
 						<h3 class="venu-info-title">Eten en drinken</h3>
-						<p class="venu-info-text">{{ site.data.event.venue.food }}</p>
+						<p class="venu-info-text">{{ site.data.event.venue.food.en }}</p>
 						<a href="#" class="venu-info-link">Read More <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>

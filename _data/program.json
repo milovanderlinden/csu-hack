@@ -1,156 +1,189 @@
 [
   {
-    "id": "Dag 1",
+    "id": {
+      "nl":"Dag 1",
+      "en": "Day 1"
+    },
     "code": "one",
-    "date": "Zaterdag, 10 maart",
+    "date": {
+      "nl":"Zaterdag, 10 maart",
+      "en":"Saturday, march 10"
+    },
     "listings": [
       {
         "time": "09:00",
         "class": "lime",
-        "title": "Deur open"
+        "title": {"nl":"Deur open", "en": "Doors open"}
       },
       {
         "time": "10:00",
         "class": "",
-        "title": "Introductie CSU event",
+        "title": {"nl":"Introductie CSU event", "en": "Introduction CSU event"},
         "image": "speakers/kos.jpg",
         "speaker": "Kos Fourkiotis"
       },
       {
         "time": "10:10",
         "class": "",
-        "title": "Programma overzicht",
+        "title": {"nl":"Programma overzicht", "en": "Program overview"},
         "image": "speakers/milo.jpg",
         "speaker": "Milo van der Linden"
       },
       {
         "time": "10:20",
         "class": "",
-        "title": "Challenges presentaties",
-        "description": "Korte uitleg en toelichting van de challenge en het proces.",
+        "title": {"nl":"Challenges presentaties", "en": "Presentation of Challenges"},
+        "description": {
+          "nl":"Korte uitleg en toelichting van de challenge en het proces.",
+          "en":"Short explanation and details of the challenge and the process."
+        },
         "image": "sponsors/csu.png"
       },
       {
         "time": "10:30",
         "class": "",
-        "title": "Team formation",
-        "description": "Deelnemers vormen teams",
+        "title": {"nl":"Team formation","en":"Team formation"},
+        "description": {
+          "nl":"Deelnemers vormen teams",
+          "en":"Contestants make teams"
+        },
         "image": "speakers/team.jpg"
       },
       {
         "time": "10:50",
         "class": "no-border",
-        "title": "Team concepts",
-        "description": "De teams gaan aan de slag met het bedenken van het concept"
+        "title": {
+          "nl":"Team concepts",
+          "en": "Team concepts"
+        },
+        "description": {
+          "nl":"De teams gaan aan de slag met het bedenken van het concept",
+          "en":"Teams design their concept"
+        }
       },
       {
         "time": "11:00",
         "class": "no-border",
-        "title": "Start hacking"
+        "title": {"nl":"Start hacking", "en": "Start hacking"},
       },
       {
         "time": "12:00",
         "class": "no-border",
-        "title": "Shout out",
-        "description": "Teams vertellen kort waar ze mee bezig zijn, waar ze tegen aanlopen en wat ze eventueel nodig hebben."
+        "title": {"nl":"Shout out", "en": "Shout out"},
+        "description": {
+          "nl":"Teams vertellen kort waar ze mee bezig zijn, waar ze tegen aanlopen en wat ze eventueel nodig hebben.",
+          "en":"Teams describe what they are working on, what problems they face and what they need"
+        }
       },
       {
         "time": "13:00",
         "class": "lime",
-        "title": "Lunch"
+        "title": {"nl":"Lunch", "en": "Lunch"}
       },
       {
         "time": "14:00",
         "class": "no-border",
-        "title": "Herstart"
+        "title": {"nl":"Herstart", "en": "Restart"}
       },
       {
         "time": "15:00",
         "class": "",
-        "title": "Lightning talk",
+        "title": {"nl":"Lightning talk","en": "Lightning talk"},
         "speaker": "Nicole Segers",
-        "description": "Nicole filosofeert met ons over de toekomst.",
+        "description": {"nl":"Nicole filosofeert met ons over de toekomst.","en": "Nicole will discuss the future with us"},
         "image": "speakers/nicole.jpg"
       },
       {
         "time": "",
         "class": "no-border",
-        "title": "Hacking in progress"
+        "title": {"nl":"Hacking in progress","en": "Hacking in progress"}
       },
       {
         "time": "18:30",
         "class": "lime",
-        "title": "Buffet"
+        "title": {"nl":"Buffet","en": "Buffet"}
       },
       {
         "time": "",
         "class": "no-border",
-        "title": "Hacking in progress"
+        "title": {"nl":"Hacking in progress", "en": "Hacking in progress"}
       },
       {
         "time": "19:00",
         "class": "",
-        "title": "Lightning talk",
+        "title": {"nl":"Lightning talk","en": "Lightning talk"},
         "speaker": "Michael Hawkins",
-        "description": "Michael heeft een eigenwijze kijk op de toekomst. Kan hij jou inspireren?",
+        "description": {
+          "nl":"Michael heeft een eigenwijze kijk op de toekomst. Kan hij jou inspireren?",
+          "en":"Michael has his own view of the future. Can he inspire you?"
+        },
         "image": "speakers/michael.jpg"
       },
       {
         "time": "",
         "class": "no-border",
-        "title": "Hacking in progress"
+        "title": {"nl":"Hacking in progress", "en": "Hacking in progress"}
       },
       {
         "time": "21:00",
         "class": "lime",
-        "title": "Snacks"
+        "title": {"nl":"Snacks", "en": "Snacks"}
       },
       {
         "time": "",
         "class": "no-border",
-        "title": "Hacking in progress",
-        "description": "Hard aan de slag. Het kan tot in de late uren (vergeet niet te ontspannen). Eventueel kan er ook echt geslapen worden."
+        "title": {"nl":"Hacking in progress","en": "Hacking in progress"},
+        "description": {
+          "nl": "Hard aan de slag. Het kan tot in de late uren (vergeet niet te ontspannen). Eventueel kan er ook echt geslapen worden.",
+          "en": "Back to work. You can go on until the late hours (don't forget to relax). You may consider sleeping as well."
+        }
       }
     ]
   },
   {
-    "id": "Dag 2",
+    "id": {
+      "nl":"Dag 2",
+      "en": "Day 2"
+    },
     "code": "two",
-    "date": "Zondag, 11 maart",
+    "date": {
+      "nl":"Zondag, 11 maart",
+      "en":"Sunday, march 11"
+    },
     "listings": [
       {
         "time": "09:00",
         "class": "lime",
-        "title": "Ontbijt"
+        "title": {"nl":"Ontbijt", "en": "Breakfast"}
       },
       {
         "time": "11:00",
         "class": "",
-        "title": "Final concept definition"
+        "title": {"nl":"Final concept definition","en":"Final concept definition"}
       },{
         "time": "13:00",
         "class": "lime",
-        "title": "Lunch"
+        "title": {"nl":"Lunch", "en": "Lunch"}
       },{
         "time": "14:00",
         "class": "",
-        "title": "Pitch training"
+        "title": {"nl":"Pitch training","en":"Pitch training"}
       },{
         "time": "15:00",
         "class": "",
-        "title": "Pitches to Jury!"
+        "title": {"nl":"Pitches to Jury!","en": "Pitches to Jury!"}
       },{
         "time": "16:30",
         "class": "",
-        "title": "Borrel"
+        "title": {"nl":"Borrel", "en": "Drinks"}
       },{
         "time": "17:00",
         "class": "",
-        "title": "Jury verdict / prizes / celebration"
+        "title": {"nl":"Jury verdict / prizes / celebration","en":"Jury verdict / prizes / celebration"}
       },{
         "time": "17:30 - 18:00",
         "class": "",
-        "title": "Borrel"
+        "title": {"nl":"Borrel", "en": "Drinks"}
       }
     ]
   }
