@@ -98,7 +98,34 @@ lang: nl
         <div class="gap-30"></div>
       </div>
     </section>
-
+    <section id="ts-pricing" class="ts-pricing">
+        <div class="container">
+           <div class="row">
+              {% for item in site.data.prizes %}
+              <div class="col-md-4">
+                 <div class="ts-pricing-box {{ item.class }}">
+                    <div class="ts-pricing-header">
+                       <h2 class="ts-pricing-name">{{ item.name.nl }}</h2>
+                       <h2 class="ts-pricing-price">
+                          <span class="currency">{{ item.cur }}</span><strong>{{ item.ammount }}</strong>
+                       </h2>
+                    </div>
+                    <!-- Pricing header end-->
+                    <!--<div class="ts-pricing-features">
+                       <ul class="list-unstyled">
+                          <li class="check">Get Access to all Sessions</li>
+                          <li class="check">Unlimited Coffee and Foods</li>
+                          <li class="un-check">Meet with Favorite Speakers</li>
+                          <li class="un-check">Access to all Audio and Video Files</li>
+                       </ul>
+                    </div>-->
+  
+                 </div>
+              </div>
+              {% endfor %}
+           </div>
+        </div>
+     </section>
     <section id="ts-speakers" class="ts-speakers gradient-bg">
       <div class="container">
         <div class="row text-center">
@@ -106,7 +133,7 @@ lang: nl
         </div>
         <div class="row text-center">
           {% for item in site.data.speakers %}
-          <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="col-xs-12 col-sm-8 col-md-4">
               <div class="ts-speaker">
                 <div class="ts-speaker-image">
                   <img class="img-responsive" src="/assets/images/speakers/{{ item.id }}.jpg" alt="{{ item.id }}" />

@@ -1999,10 +1999,8 @@ ul.navbar-nav > li:hover > a{
 
 .ts-pricing {
     background-color: #f5f5f5;
-    background-image: url(../images/parallax2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: url(../images/pattern3.png);
+    
     padding: 100px 0;
 }
 .ts-pricing-box {

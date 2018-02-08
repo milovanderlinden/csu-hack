@@ -1,0 +1,32 @@
+[
+  {
+    "id": "prize_3",
+    "name": {
+      "nl": "3e prijs",
+      "en": "3th prize"
+    },
+    "ammount": 1000,
+    "cur": "&euro;",
+    "class": ""
+  },
+  {
+    "id": "prize_2",
+    "name": {
+      "nl": "2e prijs",
+      "en": "2nd prize"
+    },
+    "ammount": 1500,
+    "cur": "&euro;",
+    "class": ""
+  },
+  {
+    "id": "prize_1",
+    "name": {
+      "nl": "1e prijs",
+      "en": "1th prize"
+    },
+    "ammount": 2500,
+    "cur": "&euro;",
+    "class": "pricing-featured"
+  }
+]
