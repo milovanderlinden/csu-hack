@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Locatie
+title: Venue
 permalink: en/venue
+lang: en
 ---
 <div id="page-banner-area" class="page-banner-area" style="background-image:url(/assets/images/hero-area/bgmain5.jpg)">
 		<div class="page-banner-title">
@@ -13,8 +14,8 @@ permalink: en/venue
 	<section id="main-container" class="main-container">
 		<div class="container">
 			<div class="row text-center">
-				<h2 class="section-title">Waar en wat?</h2>
-				<p class="section-sub-title">Locatie en informatie</p>
+				<h2 class="section-title">Where and what?</h2>
+				<p class="section-sub-title">Location and information</p>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
@@ -22,21 +23,21 @@ permalink: en/venue
 					<p>{{ site.data.event.venue.description.en }}</p>
 					<div class="contact-info">
 						<div class="contact-info-box">
-							<i class="fa fa-map-marker">&nbsp;</i>
+							<i class="fas fa-map-marker">&nbsp;</i>
 							<div class="contact-info-box-content">
 								<h4>Adres: </h4>
 								<p>{{ site.data.event.venue.address }}</p>
 							</div>
 						</div>
 						<div class="contact-info-box">
-							<i class="fa fa-envelope-o">&nbsp;</i>
+							<i class="fas fa-envelope">&nbsp;</i>
 							<div class="contact-info-box-content">
 								<h4>Email: </h4>
 								<p>{{ site.data.event.venue.email }}</p>
 							</div>
 						</div>
 						<div class="contact-info-box">
-							<i class="fa fa-phone">&nbsp;</i>
+							<i class="fas fa-phone">&nbsp;</i>
 							<div class="contact-info-box-content">
 								<h4>Telefoon: </h4>
 								<p>{{ site.data.event.venue.phone }}</p>
@@ -54,24 +55,29 @@ permalink: en/venue
 			<div class="row text-center">
 				<div class="col-md-4">
 					<div class="venu-info-content">
-						<span class="venu-info-img"><img src="/assets/images/icons/transport.png" alt="" /></span>
+							<span class="venu-info-img">
+                  <i class="fas fa-bus fa-3x"></i>
+              </span>
 						<h3 class="venu-info-title">Transport</h3>
 						<p class="venu-info-text">{{ site.data.event.venue.transport.en }}</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="venu-info-content">
-						<span class="venu-info-img"><img src="/assets/images/icons/hotel.png" alt="" /></span>
-						<h3 class="venu-info-title">Overnachten</h3>
+							<span class="venu-info-img">
+                  <i class="fas fa-bed fa-3x"></i>
+              </span>
+						<h3 class="venu-info-title">Stay</h3>
 						<p class="venu-info-text">{{ site.data.event.venue.stay.en }}</p>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="venu-info-content">
-						<span class="venu-info-img"><img src="/assets/images/icons/food.png" alt="" /></span>
-						<h3 class="venu-info-title">Eten en drinken</h3>
+							<span class="venu-info-img">
+                  <i class="fas fa-utensils fa-3x"></i>
+              </span>
+						<h3 class="venu-info-title">Food and Drinks</h3>
 						<p class="venu-info-text">{{ site.data.event.venue.food.en }}</p>
-						<a href="#" class="venu-info-link">Read More <i class="fa fa-angle-right"></i></a>
 					</div>
 				</div>
 			</div>

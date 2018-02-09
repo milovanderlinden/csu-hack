@@ -65,7 +65,7 @@ permalink: index
               <img class="img-responsive" src="{{ '/assets/images/intro-video.jpg' | relative_url }}" alt="" />
               <a class="popup" href="https://www.youtube.com/embed/_C04bg8eCsM?autoplay=1&amp;loop=1">
                 <div class="video-icon">
-                  <i class="fa fa-play"></i>
+                  <i class="fas fa-play"></i>
                 </div>
               </a>
             </div>
@@ -142,28 +142,28 @@ permalink: index
                     {% if item.instagram %}
                     <li>
                       <a href="{{ item.instagram }}" target="_blank">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fab fa-instagram"></i>
                       </a>
                     </li>
                     {% endif %}
                     {% if item.linkedin %}
                     <li>
                       <a href="{{ item.linkedin }}" target="_blank">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                       </a>
                     </li>
                     {% endif %}
                     {% if item.facebook %}
                     <li>
                       <a href="{{ item.facebook }}" target="_blank">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fab fa-facebook-f"></i>
                       </a>
                     </li>
                     {% endif %}
                     {% if item.twitter %}
                     <li>
                       <a href="{{ item.twitter }}" target="_blank">
-                        <i class="fa fa-twitter"></i>
+                        <i class="fab fa-twitter"></i>
                       </a>
                     </li>
                     {% endif %}
@@ -265,21 +265,21 @@ permalink: index
             <p>{{ site.data.event.venue.description.nl }}</p>
             <div class="contact-info">
               <div class="contact-info-box">
-                <i class="fa fa-map-marker">&nbsp;</i>
+                <i class="fas fa-map-marker">&nbsp;</i>
                 <div class="contact-info-box-content">
                   <h4>Adres: </h4>
                   <p>{{ site.data.event.venue.address }}</p>
                 </div>
               </div>
               <div class="contact-info-box">
-                <i class="fa fa-envelope-o">&nbsp;</i>
+                <i class="fas fa-envelope">&nbsp;</i>
                 <div class="contact-info-box-content">
                   <h4>Email: </h4>
                   <p>{{ site.data.event.venue.email }}</p>
                 </div>
               </div>
               <div class="contact-info-box">
-                <i class="fa fa-phone">&nbsp;</i>
+                <i class="fas fa-phone">&nbsp;</i>
                 <div class="contact-info-box-content">
                   <h4>Telefoon: </h4>
                   <p>{{ site.data.event.venue.phone }}</p>
@@ -296,7 +296,7 @@ permalink: index
           <div class="col-md-4">
             <div class="venu-info-content">
               <span class="venu-info-img">
-                <img src="{{ '/assets/images/icons/transport.png' | relative_url }}" alt="" />
+                  <i class="fas fa-bus fa-3x"></i>
               </span>
               <h3 class="venu-info-title">Transport</h3>
               <p class="venu-info-text">{{ site.data.event.venue.transport.nl }}</p>
@@ -305,7 +305,7 @@ permalink: index
           <div class="col-md-4">
             <div class="venu-info-content">
               <span class="venu-info-img">
-                <img src="{{ '/assets/images/icons/hotel.png' | relative_url }}" alt="" />
+                  <i class="fas fa-bed fa-3x"></i>
               </span>
               <h3 class="venu-info-title">Overnachten</h3>
               <p class="venu-info-text">{{ site.data.event.venue.stay.nl }}</p>
@@ -314,7 +314,7 @@ permalink: index
           <div class="col-md-4">
             <div class="venu-info-content">
               <span class="venu-info-img">
-                <img src="{{ '/assets/images/icons/food.png' | relative_url }}" alt="" />
+                  <i class="fas fa-utensils fa-3x"></i>
               </span>
               <h3 class="venu-info-title">Eten en drinken</h3>
               <p class="venu-info-text">{{ site.data.event.venue.food.nl }}</p>
