@@ -60,6 +60,16 @@
     "linkedin": "https://www.linkedin.com/in/sarthak-yadav-189b28a3/"
   },
   {
+    "id": "suzan",
+    "name": "Suzan Stadhouders",
+    "bio": {
+      "nl": "Jurylid",
+      "en": "Jury"
+    },
+    "linkedin": "https://www.linkedin.com/in/suzanstadhouders-willemse/",
+    "twitter": "https://twitter.com/suusstadhouders"
+  },
+  {
     "id": "tobias",
     "name": "Tobias Walraven",
     "bio": {
