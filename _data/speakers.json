@@ -12,14 +12,13 @@
     "facebook": "https://www.facebook.com/jalila.essaidi"
   },
   {
-    "id": "nicole",
-    "name": "Nicole Segers",
+    "id": "jochem",
+    "name": "Jochem Goedhals",
     "bio": {
-      "nl": "Jurylid/Spreker",
-      "en": "Jury/Speaker"
+      "nl": "Jurylid",
+      "en": "Jury"
     },
-    "linkedin": "https://nl.linkedin.com/in/nicolesegers/nl",
-    "facebook": "https://www.facebook.com/nicole.segers.39"
+    "linkedin": "https://www.linkedin.com/in/jochem-goedhals-47990647/"
   },
   {
     "id": "michael",
@@ -31,5 +30,43 @@
     "twitter": "https://twitter.com/Michael_Dawkins",
     "linkedin": "https://nl.linkedin.com/in/mjdawkins",
     "facebook": "https://www.facebook.com/people/Michael-J-Dawkins/100001925651452"
+  },
+  {
+    "id": "mirjam",
+    "name": "Mirjam van Lamoen",
+    "bio": {
+      "nl": "Jurylid",
+      "en": "Jury"
+    },
+    "linkedin": "https://www.linkedin.com/in/mirjam-van-lamoen-82b3a9a/"
+  },
+  {
+    "id": "nicole",
+    "name": "Nicole Segers",
+    "bio": {
+      "nl": "Jurylid/Spreker",
+      "en": "Jury/Speaker"
+    },
+    "linkedin": "https://nl.linkedin.com/in/nicolesegers/nl",
+    "facebook": "https://www.facebook.com/nicole.segers.39"
+  },
+  {
+    "id": "sarthak",
+    "name": "Sarthak Yadav",
+    "bio": {
+      "nl": "Spreker",
+      "en": "Speaker"
+    },
+    "linkedin": "https://www.linkedin.com/in/sarthak-yadav-189b28a3/"
+  },
+  {
+    "id": "tobias",
+    "name": "Tobias Walraven",
+    "bio": {
+      "nl": "Jurylid",
+      "en": "Jury"
+    },
+    "linkedin": "https://nl.linkedin.com/in/tobias-walraven-rm-ba72a84"
   }
+  
 ]

@@ -1701,6 +1701,7 @@ ul.navbar-nav > li:hover > a{
     transition: all .4s ease;
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    margin-bottom: 12px;
 }
 
 .ts-speaker:hover{
