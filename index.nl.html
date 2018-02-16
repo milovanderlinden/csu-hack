@@ -173,7 +173,10 @@ permalink: index
                   <h3 class="ts-speaker-name">
                     <a href="#">{{ item.name }}</a>
                   </h3>
+                  <h6>{{ item.role.nl }}</h6>
+                  {% if item.bio.nl %}
                   <p class="ts-speaker-designation">{{ item.bio.nl }}</p>
+                  {% endif %}
                 </div>
               </div>
             </div>

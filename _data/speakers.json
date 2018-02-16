@@ -2,9 +2,13 @@
   {
     "id": "jalila",
     "name": "Jalila Essaïdi",
-    "bio": {
+    "role": {
       "nl": "Jurylid",
       "en": "Jury"
+    },
+    "bio": {
+      "en": "Jalila Essaïdi is a Dutch artist and entrepreneur based in Eindhoven, the Netherlands. Essaïdi is specialized in the fields of modern biotechnology and biological arts. She is best known for her work ‘2.6g 329m/s', also known as ‘Bulletproof Skin'.",
+      "nl": "Jalila Essaïdi is een artiest en ondernemer uit Eindhoven. Essaïdi is gespecialiseerd in moderne biotechnologie en biologische kunst. Ze is het meest bekend door haar werk ‘2.6g 329m/s', ook wel bekend als ‘Bulletproof Skin'."
     },
     "instagram": "https://www.instagram.com/explore/tags/jalilaessaidi/",
     "twitter": "https://twitter.com/JalilaEssaidi",
@@ -14,18 +18,26 @@
   {
     "id": "jochem",
     "name": "Jochem Goedhals",
-    "bio": {
+    "role": {
       "nl": "Jurylid",
       "en": "Jury"
+    },
+    "bio": {
+      "en": "As one of the founders and still working as driving force with Fontys Educational Designers, Jochem believes that learning starts out of wondering.",
+      "nl": "Als een van de oprichters en drijvende krachten van Fontys Educational Designers, gelooft Jochem dat leren begint met verwondering."
     },
     "linkedin": "https://www.linkedin.com/in/jochem-goedhals-47990647/"
   },
   {
     "id": "michael",
     "name": "Michael Dawkins",
-    "bio": {
+    "role": {
       "nl": "Spreker",
       "en": "Speaker"
+    },
+    "bio": {
+      "nl": "Als ondernemer houd Michael zich bezig met projecten die een positieve impact op de maatschappij hebben. Hij investeert in nieuwe ideeën vanuit sociaal kapitaal.",
+      "en": "As entrepreneur, Michael works on projects with a positive impact on public society. He invests in new ideas leveraging social capital."
     },
     "twitter": "https://twitter.com/Michael_Dawkins",
     "linkedin": "https://nl.linkedin.com/in/mjdawkins",
@@ -34,18 +46,26 @@
   {
     "id": "mirjam",
     "name": "Mirjam van Lamoen",
-    "bio": {
+    "role": {
       "nl": "Jurylid",
       "en": "Jury"
+    },
+    "bio": {
+      "nl": "Deze energieke dame is als dochter van de oprichter van CSU zeer betrokken bij de ontwikkeling van het bedrijf. Haar innovatiedrang blijkt uit haar rol als Managing Partner bij CLAP waar ze continu creatieve verbindingen legt en als initiatiefnemer van de Ideeënfabriek in Uden.",
+      "en": "This energetic lady is, as daughter of the founder of CSU, deeply involved in the development of the company. Her motivation to innovate shows in her role as Managing Partner at CLAP, where she connects companies and people, and as initiator at the Ideafactory (Ideeënfabriek) in Uden."
     },
     "linkedin": "https://www.linkedin.com/in/mirjam-van-lamoen-82b3a9a/"
   },
   {
     "id": "nicole",
     "name": "Nicole Segers",
-    "bio": {
+    "role": {
       "nl": "Jurylid/Spreker",
       "en": "Jury/Speaker"
+    },
+    "bio": {
+      "en": "Specialized in both sustainability and creativity, Nicole developed new ways to address a wide variety of themes and problems in the process of transformation towards sustainability.",
+      "nl": "Gespecialiseerd in duurzaamheid en creativiteit heeft Nicole manieren ontwikkeld om een grote variatie thema's en problemen aan te pakken in een transformatie naar duurzaamheid."
     },
     "linkedin": "https://nl.linkedin.com/in/nicolesegers/nl",
     "facebook": "https://www.facebook.com/nicole.segers.39"
@@ -53,18 +73,26 @@
   {
     "id": "sarthak",
     "name": "Sarthak Yadav",
-    "bio": {
+    "role": {
       "nl": "Spreker",
       "en": "Speaker"
+    },
+    "bio": {
+      "en": "Sarthak is the CEO and Co-Founder of AzioBot where the slogan is 'Making floor cleaning autonomous'.",
+      "nl": "Sarthak is de CEO en mede-oprichter van AzioBot waar de leus is 'Wij maken autonoom vloeren schoonmaken mogelijk'."
     },
     "linkedin": "https://www.linkedin.com/in/sarthak-yadav-189b28a3/"
   },
   {
     "id": "suzan",
     "name": "Suzan Stadhouders",
-    "bio": {
+    "role": {
       "nl": "Jurylid",
       "en": "Jury"
+    },
+    "bio": {
+      "nl": "Na jaren bij CSU als operationeel Business Unit Directeur te hebben gewerkt, werd Suzan in april 2017 aangesteld als lid van de Raad van Bestuur. Verantwoordelijk voor de portefeuille ‘schoonmaakoperatie’ legt zij de verbinding tussen bestaande werkwijzen en mogelijke verbeteringen.",
+      "en": "After years as the operational Business Unit Director, Suzan got assigned as member in the board of directors at CSU. With a strong focus on 'cleansing' she connects current operation with innovative solutions."
     },
     "linkedin": "https://www.linkedin.com/in/suzanstadhouders-willemse/",
     "twitter": "https://twitter.com/suusstadhouders"
@@ -72,9 +100,13 @@
   {
     "id": "tobias",
     "name": "Tobias Walraven",
-    "bio": {
+    "role": {
       "nl": "Jurylid",
       "en": "Jury"
+    },
+    "bio": {
+      "nl": "Vanuit zijn rol als lid van de Raad van Commissarissen van CSU is Tobias Walraven een betrokken jurylid met een kritische kijk op zaken. Hij is tevens Managing Director bij RIFF Online en Managing Director bij het zojuist heropende COMM-Museum voor Communicatie in Den Haag.",
+      "en": "From his rol as member of the advisory board at CSU, Tobias Walraven is a passionated member of the jury with a critical view on matters. He is also Managing Director at RIFF Online and Managing Director at the reopend COMM-Museum for Communication in The Hague."
     },
     "linkedin": "https://nl.linkedin.com/in/tobias-walraven-rm-ba72a84"
   }

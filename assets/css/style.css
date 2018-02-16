@@ -94,7 +94,6 @@ h4,
 h5,
 h6 {
     color: #289548;
-    font-size:18px;
 	font-family:'Nexa Book', Verdana, Arial, sans-serif;
 }
 h1 {
@@ -1781,6 +1780,7 @@ ul.navbar-nav > li:hover > a{
 .ts-speaker-info {
     padding: 15px 20px;
     color: #303030;
+    min-height: 212px;
 }
 .ts-speaker-info .ts-speaker-name {
     font-size: 18px;
@@ -1790,7 +1790,9 @@ ul.navbar-nav > li:hover > a{
     color: #afca0a;
 }
 .ts-speaker-info .ts-speaker-designation {
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 1.2;
+    text-align: left;
 }
 .ts-speaker:hover .ts-speaker-image:after,
 .ts-speaker:hover .ts-speaker-image .social-links {
