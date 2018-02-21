@@ -2,6 +2,11 @@
   "name": "Bright Future",
   "year": 2018,
   "organisation": "CSU",
+  "location": {
+    "lat": 51.4416028,
+    "lng": 5.4673588
+  },
+  "start": "10 March 2018 09:00:00",
   "date": {
     "nl":"10 t/m 11 maart",
     "en":"March 10 and 11"

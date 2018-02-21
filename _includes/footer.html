@@ -68,6 +68,14 @@
       </button>
     </div>
   </footer>
+  <script>
+    var event_location = {
+      lat: parseFloat("{{ site.data.event.location.lat }}"),
+      lng: parseFloat("{{ site.data.event.location.lng }}")
+    };
+    var event_start = "{{ site.data.event.start }}";
+    var event_venue_name = "{{ site.data.event.venue.name }}, {{ site.data.event.venue.city }}";
+  </script>
   <script type="text/javascript" src="{{ '/assets/js/jquery.js' | relative_url }}"></script>
   <script type="text/javascript" src="{{ '/assets/js/bootstrap.min.js' | relative_url }}"></script>
   <script type="text/javascript" src="{{ '/assets/js/jquery.counterup.min.js' | relative_url }}"></script>

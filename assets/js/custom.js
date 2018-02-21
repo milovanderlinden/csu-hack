@@ -36,7 +36,7 @@ jQuery(function($) {
 
 	if ( $( '.countdown' ).length > 0 ) {
 		$(".countdown").jCounter({
-		  	date: '10 March 2018 09:00:00',
+		  	date: event_start,
 		  	fallback: function() { console.log("count finished!") }
 		});
 	}
@@ -47,22 +47,21 @@ jQuery(function($) {
 
 	if ( $( '#map' ).length > 0 ) {
 		
-      var eventmap = {lat: 51.4416028, lng: 5.4673588};
       $('#map')
       .gmap3({
          zoom: 18,
-         center: eventmap,
+         center: event_location,
          mapTypeId : google.maps.MapTypeId.ROADMAP,
          scrollwheel: false
       })
 
       .marker({
-        position: eventmap
+        position: event_location
       })
 
       .infowindow({
-         position: eventmap,
-         content: "Philips Stadion, Eindhoven"
+         position: event_location,
+         content: event_venue_name
       })
 
       .then(function (infowindow) {
