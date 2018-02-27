@@ -19,8 +19,8 @@
         "time": "10:00",
         "class": "",
         "title": {"nl":"Introductie CSU event", "en": "Introduction CSU event"},
-        "image": "speakers/kos.jpg",
-        "speaker": "Kos Fourkiotis"
+        "speaker": "Elke de Jong",
+        "image": "speakers/elke.jpg"
       },
       {
         "time": "10:10",
@@ -37,8 +37,8 @@
           "nl":"Korte uitleg en toelichting van de challenge en het proces, namens CSU.",
           "en":"Short explanation and details of the challenge and the process on behalf of CSU."
         },
-        "speaker": "Elke de Jong",
-        "image": "speakers/elke.jpg"
+        "image": "speakers/kos.jpg",
+        "speaker": "Kos Fourkiotis"
       },
       {
         "time": "10:30",
